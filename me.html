@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<style type="text/css">
+			.mui-content{
+				padding: 1.764rem;
+			}
+			.leave-title,.audit-msg{
+				color: #000000;
+				font-size: 0.882rem;
+				padding:0.588rem 0;
+				position: relative;
+				border-bottom:1px solid#CCCCCC ;
+			}
+			}
+			.leave-title span{
+			    margin-right: 0.882rem;	
+			}
+			.leave-content{
+				padding: 0.588rem 0;
+				font-size: 0.882rem;	
+			}
+			.similarity{
+				padding-bottom: 0.471rem;
+				line-height: 18px;
+			}
+			.yuan-one{
+				position: absolute;
+				top: 15px;
+				left: -19px;
+				width: 10px;
+				height: 10px;
+				border: 1px solid#52C41A;
+				border-radius: 50%;
+			}
+			.yuan-two{
+			    position: absolute;
+				top: 16px;
+				left: -19px;
+				width: 10px;
+				height: 10px;
+				border: 1px solid#1890FF;
+				border-radius: 50%;	
+			}
+			.line{
+				position: absolute;
+				 top: 70px;
+				 left: 14px;
+				width: 0.5px;
+				border: 0.5px solid #CCCCCC;
+				height: 297px;
+			}
+			.conclusion-contet textarea{
+				min-height: 130px;!important	
+			}
+			.mui-checkbox input[type=checkbox]:before,.mui-radio input[type=radio]:before{
+				font-size: 1.176rem;
+			}
+			.lab{
+				font-size: 0.8823rem;
+			}
+	      .mui-checkbox.mui-left label, .mui-radio.mui-left label{
+		        padding-left: 2.705rem;
+		    }
+		   .mui-input-row label{
+			    line-height: 0.2;
+			}
+			.btns{
+				text-align: center;
+			}
+			.btn{
+				color: #FFFFFF;
+				width: 140px;
+				height: 40px;
+				margin-top: 40px;
+				background-color: #169BD5;
+				border: 1px solid#169BD5;
+			}
+			.audit-title{
+				font-size: 0.882rem;
+				padding: 0.588rem 0;				
+			}
+			
+		    .shade{
+				position:fixed;
+				top: 0;
+				bottom:0;
+				left:0;
+				right:0;
+				background:rgba(77,77,77,0.6);
+			
+			}
+			.popup-btn{
+				width: 90px;
+				height: 35px;
+				text-align: center;
+			}
+			.pop-up{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 17.647rem;
+				height: 10rem;
+				background-color: #FFFFFF;
+				color:#000000;
+				font-size: 0.941rem;
+				padding: 0 0.588rem;
+			}
+			.popup-top{
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #000000;
+				padding: 0.294rem;
+			}
+			.popup-btn-two{
+				color: #FFFFFF;
+				background-color: #169BD5;
+				border: 1px solid#169BD5;
+			}
+			.popup-btns{
+				padding: 10px 20px;
+				display: flex;
+				justify-content: space-between;
+			}
+		
+						
+				
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">请假管理</h1>
+		</header>
+		<div class="mui-content">
+			<div class="my-leave">
+			<div class="leave-title">
+				<div class="yuan-one">
+				
+				</div>
+		    <span>提交请假信息</span>
+		    <span class="leavetime">2018-09-21 12:00:00</span>
+		    </div>
+		    <div class="leave-top">
+		    	<div class="line">
+		    		
+		    	</div>
+		    <div class="leave-content">
+		    	<div class="leave-name similarity">
+		    	姓名：<span id="myname">张三</span>
+		    	</div>
+		    	<div class="deparment similarity">
+		    	所属支部：XXXXX党支部	
+		    	</div>
+		    	<div class="cause-title similarity">
+                                                                请假事由：
+		    	</div>
+		    	<div class="cause-content similarity">
+                                                      请假事由描述请假事由描述请假事由描述请假
+                                                        事由描述请假事由描述请假事由
+                                                        描述请假事由描述请假事由描述请假事由描述请假事由描述请假事由描述
+                                                         请假事由描述请假事由描述请假事由描述请假事由描述请假事由描述请假
+                                                         事由描述请假事由描述请假事由
+                                                   描述请假事由描述请假事由描述请假事由描述请假事由描述请假事由描述请假
+		    	</div>
+		    
+		    </div>
+		    </div>
+		    	<div class="audit-msg">
+		    		<div class="yuan-two"></div>
+		    	审核请假信息	
+		    	</div>
+		    <div class="audit">
+		    	<div class="audit-title">
+		    		审核意见
+		    	</div>
+		    	<div class="conclusion-contet">
+		    		<textarea name="" rows="" cols="" placeholder="请输入"></textarea>
+		    	</div>
+		    	<div class="conclusion-title">
+		    		
+		    	</div>
+		    	<div class="conclusion-check">
+		    	<div class="mui-input-row mui-radio mui-left">
+				<label class="lab">批准请假</label>
+				<input name="radio1" type="radio">
+			    </div> 
+			    <div class="mui-input-row mui-radio mui-left">
+				<label class="lab">驳回请假</label>
+				<input name="radio1" type="radio">
+			    </div> 
+		    	</div>
+		    </div>
+		    <div class="btns">
+		    	<button class="btn">提交</button>
+		    </div>
+			</div>
+		    
+		    <div class="shade" style="display: none;" id="shade">
+		      <div class="pop-up">
+		    	<div class="popup-top">
+		    		<div class="tishi">
+		    			提示
+		    		</div>
+		    		<div class="del" id="delshade">
+		    		X	
+		    		</div>
+		    	</div>
+		    	<div class="popup-bottom">
+		    		<div class="popup-content">
+		    			<span class="popup-name " id="leavename">ssss</span>
+		    			<span >的请假申请结果为</span>
+		    			<span id="resultor">批准请假</span>
+		    			<span >
+		    				是否确认提交审核结果？
+		    			</span>
+		    		</div>
+		    		<div class="popup-btns">
+		    		<button class="popup-btn popup-btn-one" id="resultno">取消</button>
+		    		<button class="popup-btn popup-btn-two" id="resultok">确定</button>
+		    		</div>
+		    	</div>
+		    </div>	
+		    </div>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/mui.zoom.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			var delshade = document.getElementById("delshade")
+			var resultno = document.getElementById("resultno")
+			var resultok = document.getElementById("resultok")
+			$(":radio").each(function(index,item){
+		    item.addEventListener('change',function(){
+          	 $(".btn")[0].addEventListener('tap',function(){
+          	 	console.log("aaa")
+          	 	$("#shade").css("display","block")
+          	 	var name = $("#myname").text()
+          	 	$("#leavename").text(name)
+             if(index==0){ 
+             	$("#resultor").text("批准请假")
+             }
+             else{
+             	$("#resultor").text("驳回请假")
+              }
+              });
+              })
+	          })
+			delshade.addEventListener('tap',function(){
+			$("#shade").css("display","none")	
+			})
+			resultno.addEventListener('tap',function(){
+				$("#shade").css("display","none")
+			})
+			resultok.addEventListener('tap',function(){
+				$("#shade").css("display","none")
+				//接口
+			})
+		</script>
+	</body>
+
+</html>
+
